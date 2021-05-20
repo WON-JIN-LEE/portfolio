@@ -5,18 +5,52 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>JIN's Portfolio</title>
-        <meta name="description" content="Protfolio for world-renowned engineer JIN">
-        <meta name="author" content="JIN">
-        <link rel="icon" type="image/png" href="imgs/favicon.png">
-        <script src="https://kit.fontawesome.com/b46111274b.js" crossorigin="anonymous"></script>
+        <meta name="description" content="Protfolio for world-renowned engineer JIN"> <!-- 웹페이지 정보에 대한 설명 -->
+        <meta name="author" content="JIN"> <!--웹페이지를 만든 사람-->
+        <link rel="icon" type="image/png" href="imgs/bitcoin.png"> <!--아이콘 추가-->
+        <script src="https://kit.fontawesome.com/b46111274b.js" crossorigin="anonymous"></script>  <!--Font awesome 추가-->
+        <!--google Fonts add-->
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link
             href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
             rel="stylesheet">
-        <link rel="stylesheet" href="style.css">
-        <script src="main.js" defer></script>
+
+        <link rel="stylesheet" href="style.css"> <!--css 연결-->
+        <script defer src="main.js"></script><!--JS 연결-->
 
     </head>
 
-    <body></body>
+    <body>
+        <!-- Navbar -->
+        <nav id="navbar">
+            <div class="navbar__log">
+                <img class="nav_icon"
+                    src="imgs/bitcoin.png">
+                    <a href="#">WONJIN</a>                
+            </div>
+            
+            <ul class="navbar__menu">
+                <li class="navbar__menu__item">Home</li>
+                <li class="navbar__menu__item">About</li>
+                <li class="navbar__menu__item">Skills</li>
+                <li class="navbar__menu__item">my Work</li>
+                <li class="navbar__menu__item">Testimonial</li>
+                <li class="navbar__menu__item">Contact</li>
+            </ul>
+            
+        </nav> 
+
+
+        <!-- About -->
+        <section id="about"></section>
+        <!-- Skills -->
+        <section id="skills"></section>
+        <!--Work  -->
+        <section id="work"></section>
+        <!-- Testimaonials -->
+        <section id="testimonials"></section>
+        <!-- Contact -->
+        <section id="contact"></section>
+
+    </body>
 </html>
