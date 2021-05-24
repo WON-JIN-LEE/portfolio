@@ -1,324 +1,326 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>JIN's Portfolio</title>
-        <meta name="description" content="Protfolio for world-renowned engineer JIN"> <!-- 웹페이지 정보에 대한 설명 -->
-        <meta name="author" content="JIN"> <!--웹페이지를 만든 사람-->
-        <link rel="icon" type="image/png" href="imgs/bitcoin.png"> <!--아이콘 추가-->
-        <script src="https://kit.fontawesome.com/b46111274b.js" crossorigin="anonymous"></script>  <!--Font awesome 추가-->
-        <!--google Fonts add-->
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
-        rel="stylesheet"
-        />
-        <link rel="stylesheet" href="style.css"> <!--css 연결-->
-        <script defer src="main.js"></script><!--JS 연결-->
 
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JIN's Portfolio</title>
+    <meta name="description" content="Protfolio for world-renowned engineer JIN"> <!-- 웹페이지 정보에 대한 설명 -->
+    <meta name="author" content="JIN">
+    <!--웹페이지를 만든 사람-->
+    <link rel="icon" type="image/png" href="imgs/bitcoin.png">
+    <!--아이콘 추가-->
+    <script src="https://kit.fontawesome.com/b46111274b.js" crossorigin="anonymous"></script>
+    <!--Font awesome 추가-->
+    <!--google Fonts add-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <!--css 연결-->
+    <script defer src="main.js"></script>
+    <!--JS 연결-->
 
-    <body>
+</head>
+
+<body>
 
 
-        <!-- Navbar -->
-        <nav id="navbar">
-            <div class="navbar__logo">
-                <img class="nav_icon" src="imgs/bitcoin.png">
-                <a href="#">WONJIN</a>
+    <!-- Navbar -->
+    <nav id="navbar">
+        <div class="navbar__logo">
+            <img class="nav_icon" src="imgs/bitcoin.png">
+            <a href="#">WONJIN</a>
+        </div>
+
+        <ul class="navbar__menu">
+            <li class="navbar__menu__item active">Home</li>
+            <li class="navbar__menu__item">About</li>
+            <li class="navbar__menu__item">Skills</li>
+            <li class="navbar__menu__item">my Work</li>
+            <li class="navbar__menu__item">Testimonial</li>
+            <li class="navbar__menu__item">Contact</li>
+        </ul>
+
+    </nav>
+    <!-- Home -->
+    <section id="home">
+        <img src="imgs/me.jpg" alt="Won's profile photo" class="home_avatar">
+        <h1 class="home__title">Hello, <br /> I'm Junior Developer</h1>
+        <h2 class="home__description">Frontend developer in Seoul, Korea.</h2>
+        <button class="home__contact">CONTACT ME</button>
+    </section>
+
+
+    <!-- About -->
+    <section id="about" class="section">
+        <h1>About me</h1>
+        <p>매일 코드를 끄적이며 HTML, CSS, JavaScript를 공부하고 있는 26살 취업준비생입니다.
+            대학교에서 전자정보통신공학을 전공했었고 C, Java, OS, DB 등 IT관련 강의를 수강하였으며
+            임베디드프로젝트와 앱 프로젝트를 진행했었고 현재 프론트엔드 개발자가 되기 위해 공부하고있는 백수입니다.
+        </p>
+        <div class="about__majors">
+            <div class="major">
+                <div class="major__icon">
+                    <i class="fab fa-html5"></i>
+                </div>
+                <h2 class="major__title">Front-end</h2>
+                <p class="major__description">Android, iOS, React Native, <br /> Java</p>
             </div>
-    
-            <ul class="navbar__menu">
-                <li class="navbar__menu__item active">Home</li>
-                <li class="navbar__menu__item">About</li>
-                <li class="navbar__menu__item">Skills</li>
-                <li class="navbar__menu__item">my Work</li>
-                <li class="navbar__menu__item">Testimonial</li>
-                <li class="navbar__menu__item">Contact</li>
-            </ul>
-    
-        </nav>
-        <!-- Home -->
-        <section id="home">
-            <img src="imgs/me.jpg" alt="Won's profile photo" class="home_avatar">
-    
-            <h1 class="home__title">Hello, <br /> I'm Junior Developer</h1>
-            <h2 class="home__description">Frontend developer in Seoul, Korea.</h2>
-            <button class="home__contact">CONTACT ME</button>
-        </section>
-
-
-        <!-- About -->
-        <section id="about" class="section">
-            <h1>About me</h1>
-            <p>매일 코드를 끄적이며 HTML, CSS, JavaScript를 공부하고 있는 26살 취업준비생입니다.
-                대학교에서 전자정보통신공학을 전공했었고 C, Java, OS, DB 등 IT관련 강의를 수강하였으며
-                임베디드프로젝트와 앱 프로젝트를 진행했었고 현재 프론트엔드 개발자가 되기 위해 공부하고있는 백수입니다.
-            </p>
-            <div class="about__majors">
-                <div class="major">
-                    <div class="major__icon">
-                        <i class="fab fa-html5"></i>
-                    </div>
-                    <h2 class="major__title">Front-end</h2>
-                    <p class="major__description">Android, iOS, React Native, <br /> Java</p>
+            <div class="major">
+                <div class="major__icon">
+                    <i class="fab fa-css3"></i>
                 </div>
-                <div class="major">
-                    <div class="major__icon">
-                        <i class="fab fa-css3"></i>
-                    </div>
-                    <h2 class="major__title">Front-end</h2>
-                    <p class="major__description"> Cascading Style Sheets </p>
-                </div>
-                <div class="major">
-                    <div class="major__icon">
-                        <i class="fab fa-js"></i>
-                    </div>
-                    <h2 class="major__title">Front-end</h2>
-                    <p class="major__description"> 객체 기반의 스크립트 프로그래밍 언어이다. <br />Node.js와 같은 런타임 환경과 같이<br /> 서버 프로그래밍에도 사용되고 있다. </p>
-                </div>
+                <h2 class="major__title">Front-end</h2>
+                <p class="major__description"> Cascading Style Sheets </p>
             </div>
-
-            <div class="about__jobs">
-                <div class="job">
-                <img src="imgs/gabia.png" 
-                alt="Gabia" 
-                class="job__logo">
-                <div class="job__description">
-                <p class="job__name">gabia Front-end developers</p>
-                <p class="job__period">2021.08 ~ </p>
+            <div class="major">
+                <div class="major__icon">
+                    <i class="fab fa-js"></i>
                 </div>
+                <h2 class="major__title">Front-end</h2>
+                <p class="major__description"> 객체 기반의 스크립트 프로그래밍 언어이다. <br />Node.js와 같은 런타임 환경과 같이<br /> 서버 프로그래밍에도
+                    사용되고 있다. </p>
             </div>
+        </div>
+
+        <div class="about__jobs">
             <div class="job">
-                <img src="imgs/gabia.png" alt="Gabia" class="job__logo">
+                <img src="imgs/dream.png" alt="Gabia" class="job__logo">
                 <div class="job__description">
-                    <p class="job__name">gabia Front-end developers</p>
+                    <p class="job__name"> Front-end developers</p>
                     <p class="job__period">2021.08 ~ </p>
                 </div>
             </div>
+            <div class="job">
+                <img src="imgs/dream.png" alt="Gabia" class="job__logo">
+                <div class="job__description">
+                    <p class="job__name"> Front-end developers</p>
+                    <p class="job__period">2021.08 ~ </p>
+                </div>
             </div>
-           
-        </section>
-        <!-- Skills -->
-        <section id="skills" class="section">
-            <h1>Skills</h1>
-            <h2>Skills & Attributes</h2>
-            <p>웹 소프트웨어의 전체적인 라이프사이클에 대한 이해를 가지고 있고, 웹 구축과 JS로 동적인 웹 동작을 개발하는 것을 좋아한다. 
-                디자이너와 백엔드 개발자간에 원활한 소통으로 API를 통한 서버와 클라이언트 개발에 나의 스킬들을 사용하고 십다.
-            </p>
+        </div>
 
-            <div class="skillset">
-                <div class="skillset__left">
-                    <h3 class="skillset__title">Skills</h3>
-                    <div class="skill">
-                        <div class="skill__description">
-                            <span>HTML</span>
-                            <span>99%</span>
-                        </div>
-                        <div class="skill__bar">
-                            <div class="skill__value"></div> 
-                        </div>
+    </section>
+    <!-- Skills -->
+    <section id="skills" class="section">
+        <h1>Skills</h1>
+        <h2>Skills & Attributes</h2>
+        <p>웹 소프트웨어의 전체적인 라이프사이클에 대한 이해를 가지고 있고, 웹 구축과 JS로 동적인 웹 동작을 개발하는 것을 좋아한다.
+            디자이너와 백엔드 개발자간에 원활한 소통으로 API를 통한 서버와 클라이언트 개발에 나의 스킬들을 사용하고 십다.
+        </p>
+
+        <div class="skillset">
+            <div class="skillset__left">
+                <h3 class="skillset__title">Skills</h3>
+                <div class="skill">
+                    <div class="skill__description">
+                        <span>HTML</span>
+                        <span>99%</span>
                     </div>
-                    <div class="skill">
-                        <div class="skill__description">
-                            <span>CSS</span>
-                            <span>99%</span>
-                        </div>
-                        <div class="skill__bar">
-                            <div class="skill__value"></div> 
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <div class="skill__description">
-                            <span>JavaScript</span>
-                            <span>99%</span>
-                        </div>
-                        <div class="skill__bar">
-                            <div class="skill__value"></div> 
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <div class="skill__description">
-                            <span>React</span>
-                            <span>99%</span>
-                        </div>
-                        <div class="skill__bar">
-                            <div class="skill__value"></div> 
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <div class="skill__description">
-                            <span>TypeScript</span>
-                            <span>99%</span>
-                        </div>
-                        <div class="skill__bar">
-                            <div class="skill__value"></div> 
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <div class="skill__description">
-                            <span>NodeJS</span>
-                            <span>99%</span>
-                        </div>
-                        <div class="skill__bar">
-                            <div class="skill__value"></div> 
-                        </div>
+                    <div class="skill__bar">
+                        <div class="skill__value"></div>
                     </div>
                 </div>
-                <div class="skillset__right">
-                    <div class="tools">
-                        <h3 class="skillset__title">Tools</h3>
-                        <ul class="tools_list">
-                            <li><span>Visual Studio Code</span></li>
-                            <li><span>NodeJS</span></li>
-                            <li><span>Android Studio Code</span></li>
-                            <li><span>arduino IDE</span></li>
-                            <li><span>Oracle DB</span></li>
-                            
-                        </ul>
+                <div class="skill">
+                    <div class="skill__description">
+                        <span>CSS</span>
+                        <span>99%</span>
                     </div>
-                    <div class="etc">
-                        <h3 class="skillset__title">Etc</h3>
-                        <ul class="etc__list">
-                            <li><span>git</span></li>
-                            <li><span>Scrum master</span></li>
-                            <li><span>Math</span></li>
-                        </ul>
+                    <div class="skill__bar">
+                        <div class="skill__value"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill__description">
+                        <span>JavaScript</span>
+                        <span>99%</span>
+                    </div>
+                    <div class="skill__bar">
+                        <div class="skill__value"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill__description">
+                        <span>React</span>
+                        <span>99%</span>
+                    </div>
+                    <div class="skill__bar">
+                        <div class="skill__value"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill__description">
+                        <span>TypeScript</span>
+                        <span>99%</span>
+                    </div>
+                    <div class="skill__bar">
+                        <div class="skill__value"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill__description">
+                        <span>NodeJS</span>
+                        <span>99%</span>
+                    </div>
+                    <div class="skill__bar">
+                        <div class="skill__value"></div>
                     </div>
                 </div>
             </div>
-        </section>
-        <!--Work  -->
-        <section id="work" class="section">
-            <h1>My work</h1>
-            <h3>Projects</h3>
-            <div class="work__categories">
-                <button class="category__btn">
-                    ALL<span class="category__count">8</span>
-                </button>
-                <button class="category__btn">
-                    Front-end<span class="category__count">3</span>
-                </button>
-                <button class="category__btn">
-                    Back-end<span class="category__count">3</span>
-                </button>
-                <button class="category__btn">
-                    Mobile<span class="category__count">3</span>
-                </button>
-            </div>
+            <div class="skillset__right">
+                <div class="tools">
+                    <h3 class="skillset__title">Tools</h3>
+                    <ul class="tools_list">
+                        <li><span>Visual Studio Code</span></li>
+                        <li><span>NodeJS</span></li>
+                        <li><span>Android Studio Code</span></li>
+                        <li><span>arduino IDE</span></li>
+                        <li><span>Oracle DB</span></li>
 
-            <div class="work__projects">
-                <a href="https://github.com/Won49/portfolio" class="project" target="_blank">
-                    <img class="project__img" src="imgs/projects/project1.png" alt="Youtube">
-            
-                    <div class="project__desscription">
-                        <h3>Youtube site</h3>
-                        <span>Clone coding with HTML and CSS</span>
-                    </div>
-                </a>
-                <a href="https://github.com/Won49/portfolio" class="project" target="_blank">
-                    <img class="project__img" src="imgs/projects/project2.png" alt="Mobile">
-                
-                    <div class="project__desscription">
-                        <h3>Mobile</h3>
-                        <span>Clone coding with HTML and CSS</span>
-                    </div>
-                </a>
-                <a href="https://github.com/Won49/portfolio" class="project" target="_blank">
-                    <img class="project__img" src="imgs/projects/project3.png" alt="website">
-                
-                    <div class="project__desscription">
-                        <h3>web site</h3>
-                        <span>Clone coding with HTML and CSS</span>
-                    </div>
-                </a>
-                <a href="https://github.com/Won49/portfolio" class="project" target="_blank">
-                    <img class="project__img" src="imgs/projects/project4.png" alt="website2">
-                
-                    <div class="project__desscription">
-                        <h3>website2</h3>
-                        <span>Clone coding with HTML and CSS</span>
-                    </div>
-                </a>
-                <a href="https://github.com/Won49/portfolio" class="project" target="_blank">
-                    <img class="project__img" src="imgs/projects/project5.png" alt="APP">
-                
-                    <div class="project__desscription">
-                        <h3>app</h3>
-                        <span>Clone coding with XML AND JAVA</span>
-                    </div>
-                </a>
-                <a href="https://github.com/Won49/portfolio" class="project" target="_blank">
-                    <img class="project__img" src="imgs/projects/project6.png" alt="Orange">
-                
-                    <div class="project__desscription">
-                        <h3>orange site</h3>
-                        <span>Clone coding with HTML and CSS</span>
-                    </div>
-                </a>
-                <a href="https://github.com/Won49/portfolio" class="project" target="_blank">
-                    <img class="project__img" src="imgs/projects/project7.png" alt="APP2">
-                
-                    <div class="project__desscription">
-                        <h3>app2</h3>
-                        <span>Clone coding with XML AND JAVA</span>
-                    </div>
-                </a>
-                <a href="https://github.com/Won49/portfolio" class="project" target="_blank">
-                    <img class="project__img" src="imgs/projects/project8.png" alt="website3">
-                
-                    <div class="project__desscription">
-                        <h3>website3</h3>
-                        <span>Clone coding with HTML and CSS</span>
-                    </div>
-                </a>
-                
+                    </ul>
+                </div>
+                <div class="etc">
+                    <h3 class="skillset__title">Etc</h3>
+                    <ul class="etc__list">
+                        <li><span>git</span></li>
+                        <li><span>Scrum master</span></li>
+                        <li><span>Math</span></li>
+                    </ul>
+                </div>
             </div>
-            
-        </section>
-        <!-- Testimaonials -->
-        <section id="testimonials" class="section">
-            <h1>Testimonials</h1>
-            <h3>See what they say about me</h3>
-            <div class="testimonials">
-                <div class="testimonial">
-                    <img src="imgs/testimonial/people1.jpg" alt="People" class="testimonial__avatar">
-                    <div class="testimonial__speech-bubble">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure possimus
+        </div>
+    </section>
+    <!--Work  -->
+    <section id="work" class="section">
+        <h1>My work</h1>
+        <h3>Projects</h3>
+        <div class="work__categories">
+            <button class="category__btn">
+                ALL<span class="category__count">8</span>
+            </button>
+            <button class="category__btn">
+                Front-end<span class="category__count">3</span>
+            </button>
+            <button class="category__btn">
+                Back-end<span class="category__count">3</span>
+            </button>
+            <button class="category__btn">
+                Mobile<span class="category__count">3</span>
+            </button>
+        </div>
+
+        <div class="work__projects">
+            <a href="https://github.com/Won49/portfolio" class="project" target="_blank">
+                <img class="project__img" src="imgs/projects/project1.png" alt="Youtube">
+
+                <div class="project__desscription">
+                    <h3>Youtube site</h3>
+                    <span>Clone coding with HTML and CSS</span>
+                </div>
+            </a>
+            <a href="https://github.com/Won49/portfolio" class="project" target="_blank">
+                <img class="project__img" src="imgs/projects/project2.png" alt="Mobile">
+
+                <div class="project__desscription">
+                    <h3>Mobile</h3>
+                    <span>Clone coding with HTML and CSS</span>
+                </div>
+            </a>
+            <a href="https://github.com/Won49/portfolio" class="project" target="_blank">
+                <img class="project__img" src="imgs/projects/project3.png" alt="website">
+
+                <div class="project__desscription">
+                    <h3>web site</h3>
+                    <span>Clone coding with HTML and CSS</span>
+                </div>
+            </a>
+            <a href="https://github.com/Won49/portfolio" class="project" target="_blank">
+                <img class="project__img" src="imgs/projects/project4.png" alt="website2">
+
+                <div class="project__desscription">
+                    <h3>website2</h3>
+                    <span>Clone coding with HTML and CSS</span>
+                </div>
+            </a>
+            <a href="https://github.com/Won49/portfolio" class="project" target="_blank">
+                <img class="project__img" src="imgs/projects/project5.png" alt="APP">
+
+                <div class="project__desscription">
+                    <h3>app</h3>
+                    <span>Clone coding with XML AND JAVA</span>
+                </div>
+            </a>
+            <a href="https://github.com/Won49/portfolio" class="project" target="_blank">
+                <img class="project__img" src="imgs/projects/project6.png" alt="Orange">
+
+                <div class="project__desscription">
+                    <h3>orange site</h3>
+                    <span>Clone coding with HTML and CSS</span>
+                </div>
+            </a>
+            <a href="https://github.com/Won49/portfolio" class="project" target="_blank">
+                <img class="project__img" src="imgs/projects/project7.png" alt="APP2">
+
+                <div class="project__desscription">
+                    <h3>app2</h3>
+                    <span>Clone coding with XML AND JAVA</span>
+                </div>
+            </a>
+            <a href="https://github.com/Won49/portfolio" class="project" target="_blank">
+                <img class="project__img" src="imgs/projects/project8.png" alt="website3">
+
+                <div class="project__desscription">
+                    <h3>website3</h3>
+                    <span>Clone coding with HTML and CSS</span>
+                </div>
+            </a>
+
+        </div>
+
+    </section>
+    <!-- Testimaonials -->
+    <section id="testimonials" class="section">
+        <h1>Testimonials</h1>
+        <h3>See what they say about me</h3>
+        <div class="testimonials">
+            <div class="testimonial">
+                <img src="imgs/testimonial/people1.jpg" alt="People" class="testimonial__avatar">
+                <div class="testimonial__speech-bubble">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure possimus
                         rem sequi? Nihil, est impedit dignissimos consequatur totam, odit
                         deserunt doloremque laudantium similique corrupti, iusto optio rerum in
                         deleniti officia.</p>
-                        <p class="name"><a href="">WONJIN</a>/gabia</p>
-                    </div>
-                </div>
-                <div class="testimonial">
-                    <img src="imgs/testimonial/people1.jpg" alt="People" class="testimonial__avatar">
-                    <div class="testimonial__speech-bubble">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure possimus
-                            rem sequi? Nihil, est impedit dignissimos consequatur totam, odit
-                            deserunt doloremque laudantium similique corrupti, iusto optio rerum in
-                            deleniti officia.</p>
-                        <p class="name"><a href="">WONJIN</a>/gabia</p>
-                    </div>
+                    <p class="name"><a href="">WONJIN</a>/gabia</p>
                 </div>
             </div>
-        </section>
-        <!-- Contact -->
-        <section id="contact" class="section">
-            <h1 class="contact__title">Let's ta</h1>
-            <h2 class="contact__email">vopgh0409@gmail.com</h2>
-            <div class="contact__links">
-                <a href="https://github.com/Won49" target="_blank">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="https://github.com/Won49" target="_blank">
-                    <i class="fab fa-facebook-messenger"></i>
-                </a>
+            <div class="testimonial">
+                <img src="imgs/testimonial/people1.jpg" alt="People" class="testimonial__avatar">
+                <div class="testimonial__speech-bubble">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure possimus
+                        rem sequi? Nihil, est impedit dignissimos consequatur totam, odit
+                        deserunt doloremque laudantium similique corrupti, iusto optio rerum in
+                        deleniti officia.</p>
+                    <p class="name"><a href="">WONJIN</a>/gabia</p>
+                </div>
             </div>
-            <p class="contact__rights">2021 Dream Coding </p>
-        </section>
+        </div>
+    </section>
+    <!-- Contact -->
+    <section id="contact" class="section">
+        <h1 class="contact__title">Let's ta</h1>
+        <h2 class="contact__email">vopgh0409@gmail.com</h2>
+        <div class="contact__links">
+            <a href="https://github.com/Won49" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://github.com/Won49" target="_blank">
+                <i class="fab fa-facebook-messenger"></i>
+            </a>
+        </div>
+        <p class="contact__rights">2021 Dream Coding </p>
+    </section>
 
-    </body>
+</body>
+
 </html>
