@@ -13,3 +13,18 @@ document.addEventListener('scroll', () => {
         navbar.classList.remove('navbar--dark');
     }
 });
+
+// Hendle scrolling when tapping on the navber menu
+const navbarMenu = document.querySelector('.navbar__menu');
+navbarMenu.addEventListener('click', (event) => {
+    const target = event.target;
+    const link = target.dataset.link;
+    
+
+    if (link == null) {
+        return;
+    }
+    console.log(event.target.dataset.link);
+    const scrollTO = document.querySelector(link);
+    scrollTO.scrollIntoView({ behavior: 'smooth' });
+});
