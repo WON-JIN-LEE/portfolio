@@ -21,7 +21,14 @@ navbarMenu.addEventListener('click', (event) => {
     if (link == null) {
         return;
     }
+    navbarMenu.classList.remove('open');
     scrollIntoView(link);
+});
+
+// Navbar toggle button for smell screen
+const navbarToggleBtn = document.querySelector('.navbar__toggle-btn');
+navbarToggleBtn.addEventListener('click', () => {
+    navbarMenu.classList.toggle('open');    
 });
 
 // // Hendle click on "contact me" button on home
@@ -66,6 +73,12 @@ workBtnContainer.addEventListener('click', (e) => {
         return;
     }
     
+    // Remove selection from the previous item and select the new one
+    const active = document.querySelector('.category__btn.selected');
+    active.classList.remove('selected');
+    const target = e.target.nodeName === 'BUTTON' ? e.target : e.target.parentNode;
+    target.classList.add('selected');
+
     projectContainer.classList.add('anim-out');
     setTimeout(() => {
     projects.forEach((project) => {
@@ -80,6 +93,7 @@ workBtnContainer.addEventListener('click', (e) => {
     projectContainer.classList.remove('anim-out');
     }, 300)
 });
+
 
 function scrollIntoView(selector) {
     const scrollTO = document.querySelector(selector);
