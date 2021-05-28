@@ -399,12 +399,12 @@ P {
 .project__description h3:after {
   content: " ";
   left: 50%;
+  transform: translateX(-50%);
   width: 50px;
   height: 2px;
   background-color: var(--color-dark-white);
   display: block;
   position: relative;
-  transform: translateX(-50%);
   margin-top: 8px;
 }
 
