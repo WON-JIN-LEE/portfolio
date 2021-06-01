@@ -92,12 +92,6 @@ workBtnContainer.addEventListener('click', (e) => {
 });
 
 
-function scrollIntoView(selector) {
-    const scrollTO = document.querySelector(selector);
-    scrollTO.scrollIntoView({
-        behavior: 'smooth'
-    });
-}
 
 // 1.모든 섹션 요소들과 메뉴아이템들을 가지고 온다
 // 2. IntersectionObserver를 이용해서 모든 섹션들을 관잘한다.
@@ -125,6 +119,15 @@ function selectNavItem(selected) {
     selectedNavItem.classList.remove('active');
     selectedNavItem = selected;
     selectedNavItem.classList.add('active');
+}
+
+
+function scrollIntoView(selector) {
+    const scrollTO = document.querySelector(selector);
+    scrollTO.scrollIntoView({
+        behavior: 'smooth'
+    });
+    selectNavItem(navItems[sectionIds.indexOf(selector)]);
 }
 
 const observerOption = {
