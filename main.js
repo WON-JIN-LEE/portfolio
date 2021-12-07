@@ -16,12 +16,12 @@ const navbarMenu = document.querySelector('.navbar__menu');
 navbarMenu.addEventListener('click', (event) => {
     const target = event.target;
     const link = target.dataset.link;
+
     if (link == null) {
         return;
     }
-    navbarMenu.classList.remove('open');
+    navbarMenu.classList.remove('open'); // 모바일 사이즈일때 navbar 메뉴 클릭 시 메뉴박스 없애기
     scrollIntoView(link);
-    selectNavItem(target);
 });
 
 // Navbar toggle button for smell screen
@@ -111,16 +111,15 @@ const navItems = sectionIds.map(id =>
     document.querySelector(`[data-link="${id}"]`)
 );
 
-
 let selectedNavItem = navItems[0];
 let selectedNavIndex = 0;
 
+// 선택된 메뉴 border 추가
 function selectNavItem(selected) {
     selectedNavItem.classList.remove('active');
     selectedNavItem = selected;
     selectedNavItem.classList.add('active');
 }
-
 
 function scrollIntoView(selector) {
     const scrollTO = document.querySelector(selector);
